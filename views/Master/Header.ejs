@@ -1,0 +1,52 @@
+﻿<div class="navbar navbar-inverse navbar-fixed-top headroom" >
+		<div class="container">
+			<div class="navbar-header">
+				<!-- Button for smallest screens -->
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<a class="navbar-brand" href="index.html"><img src="/stylesheets/assets/images/logo.png" alt="Progressus HTML5 template"></a>
+			</div>
+			<div class="navbar-collapse collapse" ng-controller="NavCtrl">
+				<ul class="nav navbar-nav pull-right" ng-show="isLoggedIn()">
+					<li class="active"><a href="#/">Home</a></li>
+					<li><a href="/#/projectInfo">Project Info</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More Pages <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="sidebar-left.html">Left Sidebar</a></li>
+							<li class="active"><a href="sidebar-right.html">Right Sidebar</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+					
+				</ul>
+        <nav  >
+          <ul class="nav navbar-nav">
+            <li ng-show="isLoggedIn()">
+              <a>{{ currentUser() }}</a>
+            </li>
+            <li ng-show="isLoggedIn()">
+              <a href="" ng-click="logOut()">Log Out</a>
+            </li>
+            <li ng-hide="isLoggedIn()">
+              <a href="/#/login">Log In</a>
+            </li>
+            <li ng-hide="isLoggedIn()">
+              <a href="/#/register">Register</a>
+            </li>
+          </ul>
+        </nav>
+			</div><!--/.nav-collapse -->
+		</div>
+	</div> 
+	<!-- /.navbar -->
+
+	<!-- Header -->
+	<header id="head">
+		<div class="container">
+			<div class="row">
+				<h1 class="lead">News for everyone and eachone</h1>
+				
+			
+			</div>
+		</div>
+	</header>
