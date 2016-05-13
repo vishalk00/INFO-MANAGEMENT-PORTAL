@@ -239,7 +239,7 @@ app.factory('auth', ['$http', '$window', function ($http, $window) {
     };
 
     auth.logOut = function () {
-        $window.localStorage.removeItem('flapper-news-token');
+        $window.localStorage.removeItem('INFO_MS-token');
         return true;
     };
 
